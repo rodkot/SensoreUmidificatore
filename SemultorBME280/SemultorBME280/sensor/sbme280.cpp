@@ -65,7 +65,9 @@ void sbme280::resolve(uint8_t adress){
 			break;
 		}
 		case BME280_DIG_H2_REG:{
-			transmit(E1); 
+			// Проблема 
+			transmit(E1);
+			// SPI Не передает второй байт 
 			transmit(E2);
 			break;
 		}
