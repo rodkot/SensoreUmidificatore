@@ -1,0 +1,49 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="MCU" CircId="mega168-1" mainComp="false" Show_id="true" Show_Val="false" Pos="744,452" rotation="360" hflip="1" vflip="1" label="master" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" varList="SPH/0x005E/u8,SPSR/0x004D/u8,SPSR/0x004D/u8,SPSR/0x004D/u8,R20/0x0014/u8,R20/0x0014/u8,R17/0x0011/u8" Frequency="16 MHz" Program="SensoreUmidificatore/SensoreUmidificatore/Debug/SensoreUmidificatore.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="MCU" CircId="mega168-224" mainComp="false" Show_id="true" Show_Val="false" Pos="932,452" rotation="360" hflip="1" vflip="1" label="bme280" idLabPos="2,-18" labelrot="0" valLabPos="-16,20" valLabRot="0" varList="row/0x0012/u8,SPCR/0x004C/u8,SPCR/0x004C/u8,/---/uint8,/---/uint8,SPSR/0x004D/u8" Frequency="16 MHz" Program="SemultorBME280/SemultorBME280/Debug/SemultorBME280.hex" Auto_Load="true" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-233" mainComp="false" Show_id="false" Show_Val="false" Pos="676,460" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-233" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Led" CircId="Led-235" mainComp="false" Show_id="false" Show_Val="false" Pos="700,540" rotation="180" hflip="1" vflip="1" label="Led-235" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-237" mainComp="false" Show_id="false" Show_Val="false" Pos="660,596" rotation="0" hflip="1" vflip="1" label="Ground-237" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-242" mainComp="false" Show_id="false" Show_Val="false" Pos="1048,420" rotation="0" hflip="1" vflip="1" label="Led-242" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-245" mainComp="false" Show_id="false" Show_Val="false" Pos="1204,500" rotation="0" hflip="1" vflip="1" label="Ground-245" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-247" mainComp="false" Show_id="false" Show_Val="false" Pos="1048,452" rotation="0" hflip="1" vflip="1" label="Led-247" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-266" mainComp="false" Show_id="false" Show_Val="false" Pos="780,416" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-266" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Node" CircId="Node-250" mainComp="false" Pos="1204,452" />
+
+<item itemtype="Connector" uid="connector-267" startpinid="mega168-1-PORTB3" endpinid="mega168-224-PORTB3" pointList="784,548,852,548,852,620,1004,620,1004,548,972,548" />
+
+<item itemtype="Connector" uid="connector-268" startpinid="mega168-1-PORTB5" endpinid="mega168-224-PORTB5" pointList="784,532,836,532,836,636,1020,636,1020,532,972,532" />
+
+<item itemtype="Connector" uid="connector-269" startpinid="mega168-1-PORTB2" endpinid="mega168-224-PORTB2" pointList="784,556,860,556,860,612,996,612,996,556,972,556" />
+
+<item itemtype="Connector" uid="connector-270" startpinid="mega168-1-PORTB4" endpinid="mega168-224-PORTB4" pointList="784,540,844,540,844,628,1012,628,1012,540,972,540" />
+
+<item itemtype="Connector" uid="connector-271" startpinid="Led-235-lPin" endpinid="mega168-1-PORTD5" pointList="716,540,736,540" />
+
+<item itemtype="Connector" uid="connector-272" startpinid="Led-235-rPin" endpinid="Ground-237-Gnd" pointList="684,540,660,540,660,580" />
+
+<item itemtype="Connector" uid="connector-273" startpinid="Ground-245-Gnd" endpinid="Node-250-0" pointList="1204,484,1204,452" />
+
+<item itemtype="Connector" uid="connector-274" startpinid="mega168-224-PORTC5" endpinid="Led-247-lPin" pointList="972,460,1032,460,1032,452" />
+
+<item itemtype="Connector" uid="connector-275" startpinid="Led-247-rPin" endpinid="Node-250-1" pointList="1064,452,1204,452" />
+
+<item itemtype="Connector" uid="connector-276" startpinid="Node-250-2" endpinid="Led-242-rPin" pointList="1204,452,1204,420,1064,420" />
+
+<item itemtype="Connector" uid="connector-277" startpinid="mega168-224-PORTC6" endpinid="Led-242-lPin" pointList="924,460,924,420,1032,420" />
+
+<item itemtype="Connector" uid="connector-278" startpinid="Fixed Voltage-233-outnod" endpinid="mega168-1-PORTC6" pointList="692,460,736,460" />
+
+<item itemtype="Connector" uid="connector-279" startpinid="Fixed Voltage-266-outnod" endpinid="mega168-1-PORTC5" pointList="780,432,800,432,800,460,784,460" />
+
+</circuit>
