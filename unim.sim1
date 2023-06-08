@@ -18,15 +18,23 @@
 
 <item itemtype="Fixed Voltage" CircId="Fixed Voltage-266" mainComp="false" Show_id="false" Show_Val="false" Pos="780,416" rotation="90" hflip="1" vflip="1" label="Fixed Voltage-266" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
 
+<item itemtype="Oscope" CircId="Oscope-280" mainComp="false" Show_id="false" Show_Val="false" Pos="940,324" rotation="0" hflip="1" vflip="1" label="Oscope-280" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _Пиксел." Basic_Y="135 _Пиксел." BufferSize="600000 Образцы" TimDiv="505227805" TimPos="-9786233847,-9786233847,-9786233847,-9786233847," VolDiv="0.1313,0.1313,0.1313,0.1313," Tunnels=",,,," Trigger="1" Filter="0 V" Trigger="1" AutoSC="4" Tracks="2" HideCh="false,false,false,false," VolPos="-6e-12,-6e-12,-6e-12,-6e-12," />
+
 <item itemtype="Node" CircId="Node-250" mainComp="false" Pos="1204,452" />
 
-<item itemtype="Connector" uid="connector-267" startpinid="mega168-1-PORTB3" endpinid="mega168-224-PORTB3" pointList="784,548,852,548,852,620,1004,620,1004,548,972,548" />
+<item itemtype="Node" CircId="Node-282" mainComp="false" Pos="808,532" />
 
-<item itemtype="Connector" uid="connector-268" startpinid="mega168-1-PORTB5" endpinid="mega168-224-PORTB5" pointList="784,532,836,532,836,636,1020,636,1020,532,972,532" />
+<item itemtype="Node" CircId="Node-285" mainComp="false" Pos="816,540" />
 
-<item itemtype="Connector" uid="connector-269" startpinid="mega168-1-PORTB2" endpinid="mega168-224-PORTB2" pointList="784,556,860,556,860,612,996,612,996,556,972,556" />
+<item itemtype="Node" CircId="Node-291" mainComp="false" Pos="832,556" />
 
-<item itemtype="Connector" uid="connector-270" startpinid="mega168-1-PORTB4" endpinid="mega168-224-PORTB4" pointList="784,540,844,540,844,628,1012,628,1012,540,972,540" />
+<item itemtype="Node" CircId="Node-295" mainComp="false" Pos="824,548" />
+
+<item itemtype="Connector" uid="connector-267" startpinid="mega168-1-PORTB3" endpinid="Node-295-0" pointList="784,548,824,548" />
+
+<item itemtype="Connector" uid="connector-268" startpinid="mega168-1-PORTB5" endpinid="Node-282-0" pointList="784,532,808,532" />
+
+<item itemtype="Connector" uid="connector-270" startpinid="mega168-1-PORTB4" endpinid="Node-285-0" pointList="784,540,816,540" />
 
 <item itemtype="Connector" uid="connector-271" startpinid="Led-235-lPin" endpinid="mega168-1-PORTD5" pointList="716,540,736,540" />
 
@@ -45,5 +53,23 @@
 <item itemtype="Connector" uid="connector-278" startpinid="Fixed Voltage-233-outnod" endpinid="mega168-1-PORTC6" pointList="692,460,736,460" />
 
 <item itemtype="Connector" uid="connector-279" startpinid="Fixed Voltage-266-outnod" endpinid="mega168-1-PORTC5" pointList="780,432,800,432,800,460,784,460" />
+
+<item itemtype="Connector" uid="Connector-281" startpinid="Oscope-280-Pin0" endpinid="Node-282-1" pointList="852,276,808,276,808,532" />
+
+<item itemtype="Connector" uid="Connector-283" startpinid="Node-282-2" endpinid="mega168-224-PORTB5" pointList="808,532,836,532,836,636,1020,636,1020,532,972,532" />
+
+<item itemtype="Connector" uid="Connector-284" startpinid="Oscope-280-Pin1" endpinid="Node-285-1" pointList="852,308,816,308,816,540" />
+
+<item itemtype="Connector" uid="Connector-286" startpinid="Node-285-2" endpinid="mega168-224-PORTB4" pointList="816,540,844,540,844,628,1012,628,1012,540,972,540" />
+
+<item itemtype="Connector" uid="Connector-290" startpinid="Oscope-280-Pin3" endpinid="Node-291-1" pointList="852,372,832,372,832,556" />
+
+<item itemtype="Connector" uid="Connector-292" startpinid="Node-291-2" endpinid="mega168-224-PORTB2" pointList="832,556,860,556,860,612,996,612,996,556,972,556" />
+
+<item itemtype="Connector" uid="connector-269" startpinid="mega168-1-PORTB2" endpinid="Node-291-0" pointList="784,556,832,556" />
+
+<item itemtype="Connector" uid="Connector-294" startpinid="Oscope-280-Pin2" endpinid="Node-295-1" pointList="852,340,824,340,824,548" />
+
+<item itemtype="Connector" uid="Connector-296" startpinid="Node-295-2" endpinid="mega168-224-PORTB3" pointList="824,548,852,548,852,620,1004,620,1004,548,972,548" />
 
 </circuit>

@@ -48,6 +48,8 @@ int main(void)
 		   flag = false;
 		   if(bme.getHumidity()<boarder){
 			   PORTD = 0b00000001;
+		   }else{
+			   PORTD = 0;
 		   }
 		   
 	   }
